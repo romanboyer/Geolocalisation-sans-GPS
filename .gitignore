@@ -1,0 +1,46 @@
+# --- macOS ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+fastapi-env/
+.env
+
+# --- Base de Données ---
+# On ignore la BDD réelle car elle contient tes tests locaux
+*.db
+*.sqlite
+*.sqlite3
+src/wifi_scans.db
+
+# --- Streamlit ---
+# Ignore les secrets (mots de passe) mais garde la config
+.streamlit/secrets.toml
+
+# --- IDE / Éditeurs ---
+.vscode/
+.idea/
+*.swp
+
+# --- Ngrok ---
+# Ignore l'exécutable binaire s'il est dans le dossier
+ngrok
+
+# --- Logs ---
+*.log
+
+# --- ESP32 / Compilation ---
+.pio/
+*.bin
+*.elf
